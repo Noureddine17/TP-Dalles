@@ -15,13 +15,24 @@ int main (){
 	for (i=0; i<5; i++){
 		int nbr=rand()%50;
 		numero[i]=nbr;
-		cout << numero[i]<<endl;
+		if (numero[i]==nbr){
+		    numero[i]+=1;
+		   	cout <<" numero roulette " <<numero[i]<<endl;
+		}
+		else{
+		cout << "numero roulette " <<numero[i]<<endl;
 	}
-
+}
 	for (i=0; i<2; i++){
 		int nbr2=rand()%50;
-		etoile[i]=nbr2+1;
-		cout << etoile[i]<<endl;
+		etoile[i]=nbr2;
+		if (etoile[i]==nbr2){
+		    etoile[i]+=1;
+		   	cout << "numero etoile"<<etoile[i]<<endl;
+		}
+		else{
+		cout << "numero etoile " <<etoile[i]<<endl;
 	}
 
+}
 }
